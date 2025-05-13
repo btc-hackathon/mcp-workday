@@ -1,0 +1,26 @@
+[
+  {
+    "account_id": "user_001",
+    "display_name": "Vaibhav Jain",
+    "email": "vaibhavjain.wiz@gmail.com",
+    "active": true,
+    "avatar_url": "https://example.com/avatars/alice.jpg",
+    "time_zone": "America/New_York",
+    "quarter_goals": {
+      "Question": "What are your top priorities for this quarter?",
+      "Answer": "It has been made mandatory to use genAI in one of our use cases. I want to spend some time to learn the basics of large language models and prompt engineering to get started."
+    }
+  },
+  {
+    "account_id": "user_002",
+    "display_name": "Bob Smith",
+    "email": "bob@example.com",
+    "active": false,
+    "avatar_url": "https://example.com/avatars/bob.jpg",
+    "time_zone": "Europe/London",
+    "quarter_goals": {
+      "Question": "Q1",
+      "Answer": "Ans1"
+    }
+  }
+]

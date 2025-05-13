@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-workday"
+version = "0.1.0"
+description = "Workday MCP Service"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+
+authors = [
+  { name = "Vaibhav Jain", email = "vajain@redhat.com" }
+]
+
+dependencies = [
+  "fastmcp",
+]
+
+[project.urls]
+Homepage = "https://github.com/btc-hackathon/mcp-workday"
