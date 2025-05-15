@@ -3,7 +3,7 @@ from typing import Annotated
 from fastmcp import FastMCP
 from pydantic import Field
 
-from users import load_workday_users
+from .users import load_workday_users
 
 mcp = FastMCP(name="Workday MCP Service",
               description="Provides tools for interacting with Workday.",
@@ -45,7 +45,3 @@ async def get_user_quarter_goal(
                 response_data = f"{user.display_name} has no quarterly goals set."
 
     return json.dumps(response_data, indent=2, ensure_ascii=False)
-
-
-if __name__ == "__main__":
-    mcp.run(transport="sse", port=3005)

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mcp-workday
+  labels:
+    app: mcp-workday
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mcp-workday
+  template:
+    metadata:
+      labels:
+        app: mcp-workday
+    spec:
+      containers:
+        - name: mcp-workday
+          image: quay.io/vajain/mcp-workday:4.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+      restartPolicy: Always

@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: mcp-workday
+spec:
+  to:
+    kind: Service
+    name: mcp-workday
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge

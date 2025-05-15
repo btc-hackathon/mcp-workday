@@ -1,1 +1,1 @@
-# mcp-workday
+# Workday MCP Server
