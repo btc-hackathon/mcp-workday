@@ -10,7 +10,7 @@ def start_app():
     """Function to start the Flask application."""
     print("Starting Workday MCP Server Flask app")
     port = int(os.environ.get("PORT", "8080"))
-    mcp.run(transport="sse", port=port)
+    mcp.run(transport="sse", host="0.0.0.0", port=port)
 
 
 if __name__ == "__main__":
